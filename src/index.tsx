@@ -7,6 +7,8 @@ import {Provider} from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import axios from 'axios';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 axios.interceptors.response.use(
   response => {
